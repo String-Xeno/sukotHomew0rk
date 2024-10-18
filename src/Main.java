@@ -63,6 +63,9 @@ public class Main {
                 double average = (htest + etest + cctest + mtest) / 4;
                 System.out.print("The students average is: ");
 
+                System.out.println();
+
+                System.out.printf("");
             }
         }
     }
