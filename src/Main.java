@@ -1,5 +1,4 @@
 
-import java.util.Arrays;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws InterruptedException {
@@ -62,6 +61,7 @@ public class Main {
 
                 System.out.println("Please enter Coding test result: ");
                 int cctest = input.nextInt();
+
                 double average = (double) (htest + etest + cctest + mtest) / 4;
                 System.out.println("The students average is: " + average);
 
@@ -90,8 +90,9 @@ public class Main {
             } else if (i == 17) {
                 System.out.println("Enter monthly salary:");
                 int salary = input.nextInt();
-                double equalspendingmoney = ((salary - salary*0.15) * (2/3))/30;
-                System.out.println("You can spend " + equalspendingmoney + "per day");
+                double monthlyfund = ((salary - salary*0.15) * ((double) 2 /3));
+                double dailyfund = monthlyfund/30;
+                System.out.println("You can spend " + dailyfund + "per day");
             } else if (i == 18) {
                 System.out.println("How much was the property sold for?");
                 int pr1ce = input.nextInt();
@@ -101,7 +102,7 @@ public class Main {
                 int expens3s = input.nextInt();
                 System.out.println("Original price: " + pr1ce);
                 double agentcost = pr1ce * taxpercent;
-                System.out.println("Real estate agent cost: " + taxpercent);
+                System.out.println("Real estate agent cost: " + agentcost);
                 double expenses = pr1ce * expens3s;
                 System.out.println("other expenses: " + expenses);
                 double finalprice = pr1ce - expens3s - taxpercent;
