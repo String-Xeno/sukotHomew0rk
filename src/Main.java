@@ -98,13 +98,8 @@ public class Main {
                 int pr1ce = input.nextInt();
                 System.out.println("Enter the tax % the real estate agent takes");
                 int taxpercent = input.nextInt();
-                System.out.println("Enter expenses %");
+                System.out.println("Enter extra expenses cost:");
                 int expens3s = input.nextInt();
-                System.out.println("Original price: " + pr1ce);
-                double agentcost = pr1ce * taxpercent;
-                System.out.println("Real estate agent cost: " + agentcost);
-                double expenses = pr1ce * expens3s;
-                System.out.println("other expenses: " + expenses);
                 double finalprice = pr1ce - expens3s - taxpercent;
                 System.out.println("the final profit is: " + finalprice);
             } else if (i == 19) {
