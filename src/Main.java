@@ -11,7 +11,7 @@ public class Main {
 
             System.out.println();
             System.out.print("Targil " + i + " is running now!");
-            for (int u = 1; u <= 3; u++){
+            for (int h = 1; h <= 3; h++){
                 Thread.sleep(750);
                 System.out.print(".");
             }
