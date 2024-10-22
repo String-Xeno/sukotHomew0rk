@@ -10,7 +10,12 @@ public class Main {
         for (int i = 13; i <= 19; i++) {
 
             System.out.println();
-            System.out.println("Targil " + i + " is running now!");
+            System.out.print("Targil " + i + " is running now!");
+            for (int u = 1; u <= 3; u++){
+                Thread.sleep(750);
+                System.out.print(".");
+            }
+            System.out.println();
             System.out.println();
             if (i == 13){
                 while (err0rrollbacks != 1) { //I use the while in error cases, the project will rerun
